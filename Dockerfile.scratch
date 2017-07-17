@@ -1,6 +1,8 @@
 # start with a scratch (no layers)
 FROM scratch
 
+USER 1001
+
 # tell we are exposing our service on port 8080
 EXPOSE 8080
 
