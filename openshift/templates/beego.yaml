@@ -69,14 +69,12 @@ objects:
     output:
       to:
         kind: ImageStreamTag
-        name: beego-example:latest
+        name: scratch:latest
     triggers:
     - type: ConfigChange
     - type: GitHub
       github:
         secret: "${GITHUB_WEBHOOK_SECRET}"
-    postCommit:
-      script: go test -v ./...
 - kind: BuildConfig
   apiVersion: v1
   metadata:

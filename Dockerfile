@@ -1,6 +1,6 @@
 FROM golang:1.8
 
-USER nobody
+USER 1001
 
 RUN mkdir -p /go/src/github.com/openshift/golang-ex
 WORKDIR /go/src/github.com/openshift/golang-ex
