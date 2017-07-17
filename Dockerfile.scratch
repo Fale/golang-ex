@@ -5,4 +5,4 @@ FROM scratch
 EXPOSE 8080
 
 # run it!
-ENTRYPOINT ["./application"]  
+ENTRYPOINT ["/application"]  
