@@ -124,8 +124,8 @@ objects:
           kind: "ImageStreamTag"
           name: "scratch:latest"
         runtimeArtifacts: 
-          - sourcePath: "/go/src/github.com/openshift/golang-ex/go-wrapper"
-            destinationDir: "/application"
+          - sourcePath: "/go/src/github.com/openshift/golang-ex/app"
+            destinationDir: "."
     output:
       to:
         kind: ImageStreamTag

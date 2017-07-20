@@ -8,4 +8,4 @@ WORKDIR /go/src/github.com/openshift/golang-ex
 COPY . /go/src/github.com/openshift/golang-ex
 RUN go-wrapper download && go-wrapper install
 
-CMD ["go-wrapper", "run"]
+CMD ["go-wrapper"]
