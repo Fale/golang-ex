@@ -1,11 +1,6 @@
 FROM golang:1.8
-
-USER 1001
-
-RUN mkdir -p /go/src/github.com/openshift/golang-ex
-WORKDIR /go/src/github.com/openshift/golang-ex
-
-COPY . /go/src/github.com/openshift/golang-ex
-RUN go-wrapper download && go-wrapper install
-
-CMD ["go-wrapper"]
+USER 10001
+WORKDIR /go/src/app
+COPY . ./
+RUN go install
+RUN ldd /go/bin/app | grep -q "not a dynamic executable"
