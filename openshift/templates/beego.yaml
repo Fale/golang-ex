@@ -125,7 +125,7 @@ objects:
           name: "scratch:latest"
         runtimeArtifacts: 
           - sourcePath: "/go/bin/app"
-            destinationDir: "/"
+            destinationDir: "."
     output:
       to:
         kind: ImageStreamTag
